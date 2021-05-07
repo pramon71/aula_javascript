@@ -1,5 +1,60 @@
-/* Condicionais, laços de repetição e Date */
+/* Manipulando Elementos da Página */
+function clicou() {
+    document.getElementById("agradecimento").innerHTML = "<strong>Obrigado por Clicar</strong>";
+    //console.log(document.getElementById("agradecimento"));
+}
 
+function redirecionar() {
+    window.open("https://digitalinnovation.one/");
+    window.location.href = "https://digitalinnovation.one/";
+}
+
+function trocar(elemento) {
+    elemento.innerHTML = "Obrigado por passar o mouse.";
+    //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse.";
+    //alert("Trocar texto.");
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui.";
+    //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui.";
+}
+
+function load() {
+    alert("Página carregada!");
+}
+
+function onChange(elemento) {
+    console.log(elemento.value);
+}
+/*Desenvolva páginas web com JavaScript
+// Funções
+function soma(n1, n2) {
+    return n1 + n2;
+}
+
+function setReplace(frase, nome, novo_nome) {
+    return frase.replace(nome, novo_nome);
+}
+
+function validarIdade(idade) {
+    var validar;
+    if(idade >= 18) {
+        validar = true;
+    } else {
+        validar = false;
+    }
+    return validar;
+}
+
+var idade = prompt("Digite uma idade: ");
+console.log(validarIdade(idade));
+
+console.log(soma(3, 3));
+console.log(setReplace("O(A) girafa é grande.", "girafa", "rato"));
+*/
+
+/* Condicionais, laços de repetição e Date 
 // Date
 console.log("Trabalhando com Datas")
 var d = new Date();
@@ -30,6 +85,7 @@ if(idade >= 18) {
 } else {
     console.log("Sua idade: " + idade + ". Menor de idade.");
 }
+*/
 
 /* Array de Dicionário
 frutas = [{nome: "maçã", cor: "vermelha"}, {nome: "uva", cor: "roxa"}];
