@@ -1,9 +1,43 @@
-/* Array de Dicionário */
+/* Condicionais, laços de repetição e Date */
+
+// Date
+console.log("Trabalhando com Datas")
+var d = new Date();
+console.log(d);
+console.log(d.getMonth() + 1);
+console.log(d.getDate());
+console.log(d.getHours());
+console.log(d.getMinutes());
+
+// Laços de Repetição
+console.log("Trabalhando com Laços de Repetição")
+var count = 0;
+while(count < 5) {
+    console.log(count);
+    count++;
+}
+
+for(var i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+//Condicionais
+console.log("Trabalhando com Condicionais")
+var idade = prompt("Qual sua idade? ");
+
+if(idade >= 18) {
+    console.log("Sua idade: " + idade + ". Maior de Idade");
+} else {
+    console.log("Sua idade: " + idade + ". Menor de idade.");
+}
+
+/* Array de Dicionário
 frutas = [{nome: "maçã", cor: "vermelha"}, {nome: "uva", cor: "roxa"}];
 console.log(frutas);
 console.log(frutas[0]);
 console.log(frutas[0].nome);
 console.log(frutas[0].cor);
+*/
 
 /* Operações com Dicionário 
 fruta = {nome: "maçã", cor: "vermelha"}
